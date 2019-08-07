@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def all_same?(board, index_arr)
-  index_arr.all? { |i| board[i] && board[i] == board[arr[0]] }
+  index_arr.all? { |i| board[i] && board[i] == board[index_arr[0]] }
 end
 
 def won?(board)
