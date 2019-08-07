@@ -25,6 +25,10 @@ def full?(board)
   board.all? { |e| ["X", "O"].include?(e) } 
 end
 
+def draw?(board)
+  won?(board) : true ? full?(board)
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |arr|
     if all_same?(board, arr)
