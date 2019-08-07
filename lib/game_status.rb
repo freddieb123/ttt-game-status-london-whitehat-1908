@@ -33,6 +33,11 @@ def over?(board)
   won?(board) || draw?(board)
 end
 
+def winner(board)
+  winning_indicies = won?(board)
+  board[winning_indicies[0]]
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |arr|
     if all_same?(board, arr)
