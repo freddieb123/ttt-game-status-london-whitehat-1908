@@ -21,6 +21,10 @@ def all_same?(board, index_arr)
   end
 end
 
+def full?(board)
+  board.all? { |e| ["X", "O"].include?(e) } 
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |arr|
     if all_same?(board, arr)
