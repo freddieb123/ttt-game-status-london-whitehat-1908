@@ -29,6 +29,10 @@ def draw?(board)
   won?(board) ? false : full?(board)
 end
 
+def over?(board)
+  
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |arr|
     if all_same?(board, arr)
