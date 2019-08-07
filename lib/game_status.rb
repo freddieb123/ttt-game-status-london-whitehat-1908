@@ -35,7 +35,7 @@ end
 
 def winner(board)
   winning_indicies = won?(board)
-  board[winning_indicies[0]]
+  winning_indicies ? board[winning_indicies[0]] : nil
 end
 
 def won?(board)
