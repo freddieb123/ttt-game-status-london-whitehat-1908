@@ -23,7 +23,7 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each do |arr|
-    if all_same?(board, index_arr)
+    if all_same?(board, arr)
       return arr
     end
   end
