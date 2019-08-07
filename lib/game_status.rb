@@ -26,7 +26,7 @@ def full?(board)
 end
 
 def draw?(board)
-  won?(board) : true ? full?(board)
+  won?(board) ? true : full?(board)
 end
 
 def won?(board)
