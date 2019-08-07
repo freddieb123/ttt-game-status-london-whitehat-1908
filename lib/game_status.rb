@@ -14,3 +14,12 @@ WIN_COMBINATIONS = [
   [1, 4, 7],
   [2, 5, 8]
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |arr|
+    if arr.all? { |e| e == arr[0]  }
+      return arr
+    end
+  end
+  nil
+end
