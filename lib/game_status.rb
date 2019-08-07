@@ -15,13 +15,13 @@ WIN_COMBINATIONS = [
   [2, 5, 8]
 ]
 
-def all_same(board, index_arr)
+def all_same?(board, index_arr)
   arr.all? { |i| board[i] && board[i] == board[arr[0]] }
 end
 
 def won?(board)
   WIN_COMBINATIONS.each do |arr|
-    if all_same(board, index_arr)
+    if all_same?(board, index_arr)
       return arr
     end
   end
